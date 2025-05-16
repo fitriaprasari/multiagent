@@ -1,0 +1,7 @@
+docker build -t yourregistry/lock-service:latest .
+docker push yourregistry/lock-service:latest
+
+# Build & push an orchestrator image:
+
+docker build -t yourregistry/orchestrator:latest -f Dockerfile.orch .
+docker push yourregistry/orchestrator:latest
